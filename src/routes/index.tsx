@@ -1,10 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import {
-  Form,
-  type DocumentHead,
-  type RequestHandler,
-  routeAction$,
-} from "@builder.io/qwik-city";
+import { Form, type DocumentHead, routeAction$ } from "@builder.io/qwik-city";
 
 import img from "../../public/img.png";
 
