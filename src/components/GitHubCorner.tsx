@@ -6,7 +6,7 @@ const GitHubCorner = component$(() => {
       class="github-corner"
       target="_blank"
       rel="nofollow noopener"
-      href="https://github.com/manuelsanchezweb/nextjs-password-protect"
+      href="https://github.com/manuelsanchezweb/qwik-password-protect"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

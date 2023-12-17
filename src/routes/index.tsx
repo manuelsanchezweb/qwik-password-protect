@@ -5,7 +5,6 @@ import img from "../../public/img.png";
 
 export const useDeleteCookie = routeAction$(async (_, { cookie, redirect }) => {
   cookie.delete(import.meta.env.PUBLIC_PASSWORD_COOKIE_NAME!, {
-    domain: "localhost",
     path: "/login",
   });
   // console.log("You have been logged out");
