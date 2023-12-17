@@ -2,7 +2,6 @@ import { $, component$, useSignal } from "@builder.io/qwik";
 import {
   type DocumentHead,
   type RequestHandler,
-  useNavigate,
   Form,
   routeAction$,
 } from "@builder.io/qwik-city";

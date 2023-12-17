@@ -1,65 +1,29 @@
-# Qwik City App ⚡️
+<div align="center">
 
-- [Qwik Docs](https://qwik.builder.io/)
-- [Discord](https://qwik.builder.io/chat)
-- [Qwik GitHub](https://github.com/BuilderIO/qwik)
-- [@QwikDev](https://twitter.com/QwikDev)
-- [Vite](https://vitejs.dev/)
+<img src="./public/app-without.png" width="425" />
 
----
+# Template Qwik Password Protect
 
-## Project Structure
+Greatly inspired by this [Medium post](https://medium.com/@ziyafenn/password-protect-page-in-nextjs-5820cd7078ae) written by Ziya Fenn
 
-This project is using Qwik with [QwikCity](https://qwik.builder.io/qwikcity/overview/). QwikCity is just an extra set of tools on top of Qwik to make it easier to build a full site, including directory-based routing, layouts, and more.
+</div>
 
-Inside your project, you'll see the following directory structure:
+## ⭐️ What is this and how to use it
 
-```
-├── public/
-│   └── ...
-└── src/
-    ├── components/
-    │   └── ...
-    └── routes/
-        └── ...
-```
+Sometimes we have some situations where we want to share something interesting with someone by sending a link, but we don't want the content to be accessible to all users. Using .htaccess might be a solution in some cases, but for a quicker option that's already integrated into the page, we can utilize some handy features of `Qwik`.
 
-- `src/routes`: Provides the directory-based routing, which can include a hierarchy of `layout.tsx` layout files, and an `index.tsx` file as the page. Additionally, `index.ts` files are endpoints. Please see the [routing docs](https://qwik.builder.io/qwikcity/routing/overview/) for more info.
+This template offers:
 
-- `src/components`: Recommended directory for components.
+- 🔒 A password-protected route. Refer to the example in the `.env.example` file. In the [live example](https://nextjs-password-protect.vercel.app/), the password to access the main content is msweb.
+- 🍪 Upon entering the password, a cookie is stored in the browser so that re-entering the password is unnecessary (unless you log out or manually delete your cookies).
+<!-- - 🔗 Additionally, it's possible to link directly to the password-protected content by appending a query with the password, like `?password=msweb`, as shown in https://nextjs-password-protect.vercel.app?password=msweb. Note that both the password and the 'msweb' part are fully customizable in the .env.example. Upon using this link, the secret content will be displayed automatically. -->
 
-- `public`: Any static assets, like images, can be placed in the public directory. Please see the [Vite public directory](https://vitejs.dev/guide/assets.html#the-public-directory) for more info.
+<div align="center" style="margin: 30px 0" > 
+<img src="./public/app-with.png" width="425" />
+</div>
 
-## Add Integrations and deployment
+To make this template work, just clone/fork/use it as a template, and create a `.env.local` out of the `.env.example`. I have been using `Node 18` without any single problem.
 
-Use the `npm run qwik add` command to add additional integrations. Some examples of integrations includes: Cloudflare, Netlify or Express Server, and the [Static Site Generator (SSG)](https://qwik.builder.io/qwikcity/guides/static-site-generation/).
+## ✉️ Contact
 
-```shell
-npm run qwik add # or `yarn qwik add`
-```
-
-## Development
-
-Development mode uses [Vite's development server](https://vitejs.dev/). The `dev` command will server-side render (SSR) the output during development.
-
-```shell
-npm start # or `yarn start`
-```
-
-> Note: during dev mode, Vite may request a significant number of `.js` files. This does not represent a Qwik production build.
-
-## Preview
-
-The preview command will create a production build of the client modules, a production build of `src/entry.preview.tsx`, and run a local server. The preview server is only for convenience to preview a production build locally and should not be used as a production server.
-
-```shell
-npm run preview # or `yarn preview`
-```
-
-## Production
-
-The production build will generate client and server modules by running both client and server build commands. The build command will use Typescript to run a type check on the source code.
-
-```shell
-npm run build # or `yarn build`
-```
+- [Manuel Sánchez](https://github.com/manuelsanchezweb)
