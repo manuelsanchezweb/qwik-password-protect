@@ -7,6 +7,9 @@ export const useDeleteCookie = routeAction$(async (_, { cookie, redirect }) => {
   cookie.delete(import.meta.env.PUBLIC_PASSWORD_COOKIE_NAME!, {
     path: "/login",
   });
+  cookie.delete(import.meta.env.PUBLIC_PASSWORD_COOKIE_NAME!, {
+    path: "/",
+  });
   // console.log("You have been logged out");
 
   // console.log(cookie.get(import.meta.env.PUBLIC_PASSWORD_COOKIE_NAME!));
