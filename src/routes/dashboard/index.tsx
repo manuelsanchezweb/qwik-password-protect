@@ -1,8 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import { type DocumentHead } from "@builder.io/qwik-city";
 
-import img from "/img.png";
-
 export default component$(() => {
   return (
     <main class="flex min-h-screen flex-col items-center justify-center gap-12 p-24 text-center">
@@ -10,7 +8,6 @@ export default component$(() => {
         {" "}
         This is the secret content
       </h1>
-      <img src={img} alt="Manu" width={200} height={200} />
     </main>
   );
 });
